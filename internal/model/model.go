@@ -1,9 +1,9 @@
 package model
 
 import (
-	"fmt"
+	"os"
 	ckbTypes "github.com/nervosnetwork/ckb-sdk-go/types"
-	"github.com/shaojunda/ckb-node-websocket-client/pkg/setting"
+	"github.com/Magickbase/ckb-node-websocket-client/pkg/setting"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
 	"time"

@@ -2,8 +2,8 @@ package global
 
 import (
 	"github.com/nervosnetwork/ckb-sdk-go/rpc"
-	"github.com/shaojunda/ckb-node-websocket-client/pkg/logger"
-	"github.com/shaojunda/ckb-node-websocket-client/pkg/setting"
+	"github.com/Magickbase/ckb-node-websocket-client/pkg/logger"
+	"github.com/Magickbase/ckb-node-websocket-client/pkg/setting"
 )
 
 var (

@@ -1,4 +1,4 @@
-module github.com/shaojunda/ckb-node-websocket-client
+module github.com/Magickbase/ckb-node-websocket-client
 
 go 1.14
 

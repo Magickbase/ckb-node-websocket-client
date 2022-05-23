@@ -1,7 +1,7 @@
 package dao
 
 import (
-	"github.com/shaojunda/ckb-node-websocket-client/internal/model"
+	"github.com/Magickbase/ckb-node-websocket-client/internal/model"
 )
 
 func (d Dao) CreatePoolTransactionEntry(param *model.PoolTransactionEntry) (*model.PoolTransactionEntry, error) {

@@ -2,8 +2,8 @@ package service
 
 import (
 	"context"
-	"github.com/shaojunda/ckb-node-websocket-client/global"
-	"github.com/shaojunda/ckb-node-websocket-client/internal/dao"
+	"github.com/Magickbase/ckb-node-websocket-client/global"
+	"github.com/Magickbase/ckb-node-websocket-client/internal/dao"
 )
 
 type Service struct {

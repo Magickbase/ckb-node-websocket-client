@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"fmt"
 	"github.com/gorilla/websocket"
-	"github.com/shaojunda/ckb-node-websocket-client/global"
-	"github.com/shaojunda/ckb-node-websocket-client/internal/rpc"
+	"github.com/Magickbase/ckb-node-websocket-client/global"
+	"github.com/Magickbase/ckb-node-websocket-client/internal/rpc"
 )
 
 var supportedTopics = []string{"new_tip_header", "new_tip_block", "new_transaction"}

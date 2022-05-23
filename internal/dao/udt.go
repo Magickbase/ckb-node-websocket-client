@@ -1,6 +1,6 @@
 package dao
 
-import "github.com/shaojunda/ckb-node-websocket-client/internal/model"
+import "github.com/Magickbase/ckb-node-websocket-client/internal/model"
 
 func (d Dao) GetUdtByTypeHash(typeHash string) (*model.Udt, error) {
 	udt := model.Udt{

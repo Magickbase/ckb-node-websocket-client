@@ -9,9 +9,9 @@ COPY go.mod ./
 COPY go.sum ./
 RUN go mod download
 
-COPY *.go ./
+ADD . .
 
-RUN go build -o /docker-gs-ping
+RUN go build -o /ckb-node-websocket-client
 
 ##
 ## Deploy
@@ -20,10 +20,10 @@ FROM gcr.io/distroless/base-debian10
 
 WORKDIR /
 
-COPY --from=build /docker-gs-ping /docker-gs-ping
+COPY --from=build /ckb-node-websocket-client /ckb-node-websocket-client
 
 EXPOSE 8080
 
 USER nonroot:nonroot
 
-ENTRYPOINT ["/docker-gs-ping"]
+ENTRYPOINT ["/ckb-node-websocket-client"]

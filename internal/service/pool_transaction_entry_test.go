@@ -3,8 +3,8 @@ package service
 import (
 	"github.com/ethereum/go-ethereum/common/hexutil"
 	ckbTypes "github.com/nervosnetwork/ckb-sdk-go/types"
-	"github.com/shaojunda/ckb-node-websocket-client/global"
-	"github.com/shaojunda/ckb-node-websocket-client/pkg/setting"
+	"github.com/Magickbase/ckb-node-websocket-client/global"
+	"github.com/Magickbase/ckb-node-websocket-client/pkg/setting"
 	"testing"
 )
 

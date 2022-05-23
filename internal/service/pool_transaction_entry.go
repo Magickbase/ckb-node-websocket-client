@@ -8,9 +8,9 @@ import (
 	"github.com/nervosnetwork/ckb-sdk-go/address"
 	ckbTypes "github.com/nervosnetwork/ckb-sdk-go/types"
 	ckbUtils "github.com/nervosnetwork/ckb-sdk-go/utils"
-	"github.com/shaojunda/ckb-node-websocket-client/global"
-	"github.com/shaojunda/ckb-node-websocket-client/internal/model"
-	"github.com/shaojunda/ckb-node-websocket-client/internal/rpc"
+	"github.com/Magickbase/ckb-node-websocket-client/global"
+	"github.com/Magickbase/ckb-node-websocket-client/internal/model"
+	"github.com/Magickbase/ckb-node-websocket-client/internal/rpc"
 	"gorm.io/datatypes"
 	"strconv"
 )

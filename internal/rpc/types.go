@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"github.com/ethereum/go-ethereum/common/hexutil"
 	ckbTypes "github.com/nervosnetwork/ckb-sdk-go/types"
-	"github.com/shaojunda/ckb-node-websocket-client/internal/model"
+	"github.com/Magickbase/ckb-node-websocket-client/internal/model"
 	"gorm.io/datatypes"
 )
 
