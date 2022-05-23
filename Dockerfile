@@ -20,6 +20,8 @@ FROM gcr.io/distroless/base-debian10
 
 WORKDIR /
 
+ADD configs configs
+
 COPY --from=build /ckb-node-websocket-client /ckb-node-websocket-client
 
 EXPOSE 8080

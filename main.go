@@ -2,7 +2,6 @@ package main
 
 import (
 	"context"
-	"fmt"
 	"github.com/gorilla/websocket"
 	ckbRPC "github.com/nervosnetwork/ckb-sdk-go/rpc"
 	"github.com/Magickbase/ckb-node-websocket-client/global"
@@ -10,7 +9,6 @@ import (
 	"github.com/Magickbase/ckb-node-websocket-client/internal/service"
 	"github.com/Magickbase/ckb-node-websocket-client/pkg/logger"
 	"github.com/Magickbase/ckb-node-websocket-client/pkg/setting"
-	"gopkg.in/natefinch/lumberjack.v2"
 	"log"
 	"net/url"
 	"os"
@@ -139,14 +137,14 @@ func setupDBEngine() error {
 }
 
 func setupLogger() error {
-	global.Logger = logger.NewLogger(&lumberjack.Logger{
-		Filename:   fmt.Sprintf("%s/%s%s", global.AppSetting.LogSavePath, global.AppSetting.LogFileName, global.AppSetting.LogFileExt),
-		MaxSize:    600,
-		MaxAge:     10,
-		MaxBackups: 3,
-		LocalTime:  true,
-	}, "", log.LstdFlags).WithCaller(2)
-
+	// global.Logger = logger.NewLogger(&lumberjack.Logger{
+	// 	Filename:   fmt.Sprintf("%s/%s%s", global.AppSetting.LogSavePath, global.AppSetting.LogFileName, global.AppSetting.LogFileExt),
+	// 	MaxSize:    600,
+	// 	MaxAge:     10,
+	// 	MaxBackups: 3,
+	// 	LocalTime:  true,
+	// }, "", log.LstdFlags).WithCaller(2)
+	global.Logger = logger.NewLogger(os.Stdout, "", log.LstdFlags).WithCaller(2)
 	return nil
 }
 
