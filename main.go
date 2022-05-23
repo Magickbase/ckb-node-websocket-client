@@ -117,6 +117,9 @@ func setupSetting() error {
 	if err != nil {
 		return err
 	}
+	global.RPCSetting.URL = os.Getenv("CKB_URL")
+	global.RPCSetting.Mode = os.Getenv("CKB_MODE")
+	global.RPCSetting.WebSocketURL = os.Getenv("CKB_WS_URL")
 	err = s.ReadSection("SystemCodeHash", &global.SystemCodeHash)
 	if err != nil {
 		return err
